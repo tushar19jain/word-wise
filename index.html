@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable = no">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+    
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+  </style>
+ <style>
+    @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@200&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap');
+  </style>
+<body id="body">
+    <section id="startScreenOne">
+        <div class="pageOne">
+            <img src="https://img.freepik.com/free-vector/back-back-concept-illustration_114360-5999.jpg?w=740&t=st=1691803703~exp=1691804303~hmac=30dc6bb7312d8a118c1647254fde78395049e036b4bab8d49b28d1d097ac2d1f" alt="" srcset="">
+        </div>
+        <div class="pageOne-info">
+            <h2>Welcome to <span>WordWise</span> Dictionary <img src="https://em-content.zobj.net/thumbs/160/whatsapp/352/open-book_1f4d6.png" alt="" srcset="" height="30px"></h2>
+            <p>Learn about every word like a pro</p>
+            <button onclick="closePageOne()">Next</button>
+        </div>
+    </section>
+    <section id="startScreenTwo">
+        <div class="pageTwo">
+            <img src="https://img.freepik.com/free-vector/abstract-3d-perspective-indoor-wireframe-vector-design_1017-39916.jpg?w=1380&t=st=1691806217~exp=1691806817~hmac=e582367e49569cef4430b51565c2e5b31856928228d4424f2321ea106a4022c1">
+            <img class="earth" src="https://cdn.pixabay.com/photo/2018/03/14/15/33/earth-3225519_1280.png" alt="" srcset="">
+        </div>
+        <div class="pageTwo-info">
+            <h2>Not just a <span>meaning</span></h2>
+            <p>Have a detailed description</p>
+            <button onclick="closePageTwo()">Next</button>
+        </div>
+    </section>
+    <main id="main">
+        <div id="datepanel">
+            <h2>Today is <span id="date"></span> </h2>
+            <label class="switch">
+                <input type="checkbox"checked>
+                <span class="slider round" onclick="darkMode()" ></span>
+            </label>
+              
+        </div>
+        <div id="inputField">
+            <h2>Search for words..📝</h2>
+            <input type="text" id="word" placeholder="Welcome"> <br>
+            <button onclick="fetchData()">Search🔎</button>
+        </div>
+        <div id="outputField">
+            <h4>You search for : <span id="searchedWord"></span></h4>
+            <h4>Definition : <span id="definition"></span> </h4>
+            <h4>Example : <span id="ex"></span></h4>
+            <h4>Synonyms :  <span id="synonyms"></span> </h4>
+            <h4>More Definitions : <br>
+            <li"><span  id="defOne"></span></li>
+         <br>
+         <li"><span  id="defTwo"></span></li> <br>
+         <li"><span  id="defThree"></span></li></h4>
+         <h4>More Synonyms : <br>
+            <li><span id ="symOne"></span></li> <br>
+            <li><span id ="symTwo"></span></li></h4>
+            <h4>Phonetics : <span id="phonetics"></span></h4>
+            <audio id="phoneticsAudio" src=""></audio>
+        </div>
+    </main>
+    <main>
+    <script src="/script.js"></script> 
+</body>
+</html>
